@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+
+<ui:composition template="/templates/page-template.xhtml">
+
+	<ui:define name="pageContent">
+
+		<h:messages id="msg" />
+
+		<h:form>
+			<h:panelGrid columns="2" cellpadding="5" styleClass="bottom-space">
+				<h:outputLabel for="idx" value="#{txtCalc.valueX}:" />
+				<h:inputText id="idx" value="#{calcBB.x}" />
+				<h:outputLabel for="idy" value="#{txtCalc.valueY}" />
+				<h:inputText id="idy" value="#{calcBB.y}" />
+				<h:commandButton value="#{txtCalc.add}" action="#{calcBB.calc()}"
+					update="msg" />
+			</h:panelGrid>
+			<h:commandLink value="#{txtMain.info}" action="#{calcBB.info()}" />
+		</h:form>
+
+	</ui:define>
+
+</ui:composition>
+</html>

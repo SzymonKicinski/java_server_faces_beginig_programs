@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+<h:head>
+	<title>KK</title>
+</h:head>
+<h:body>
+
+	<h1>Kalkulator kredytowy</h1>
+
+	<h:form id="bla">
+  		Kwota kredytu: <h:inputText value="#{calcBB.amount}" />
+		<br />
+  		Oprocentowanie: <h:selectOneMenu value="#{calcBB.interestList}" />
+								<f:selectItems value="#{CalcBB.interestNames}"/>
+												
+  		
+		<br />
+		Na ile lat kredyt: <h:inputText value="#{calcBB.period}" />
+		<br/>
+		
+		<h2><h:messages id="msg" /> </h2>
+
+		<h:commandButton value="Oblicz" action="#{calcBB.calc()}" update="msg"/>
+		<br />
+		<h:commandLink value="Informacje" action="#{calcBB.info()}" />
+		<!-- //to jest to samo co to (to nizej)co wyzej -->
+		<!-- <h:commandLink value="Informacje" action="info" /> -->
+	</h:form>
+	
+
+</h:body>
+</html>

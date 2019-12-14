@@ -1,0 +1,26 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+
+	
+	<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Factory cash</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ui:ul class="links">
+							<ui:li class="active"><a href="index.html">This is Factory cash!</a></ui:li>
+							<ui:li><a href="generic.html">Generic Page</a></ui:li>
+							<ui:li><a href="elements.html">Elements Reference</a></ui:li>
+						</ul>
+						<ul class="icons">
+							<ui:li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></ui:li>
+							<ui:li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></ui:li>
+							<ui:li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></ui:li>
+							<ui:li><a href="#" class="icon fa-github"><span class="label">GitHub</span></a></ui:li>
+						</ui:ul>
+					</nav>
+</ui:composition>

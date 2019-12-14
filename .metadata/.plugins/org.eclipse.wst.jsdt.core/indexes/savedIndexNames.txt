@@ -1,0 +1,18 @@
+INDEX VERSION 1.4+C:\Users\Sanitar\workspace\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+2687769499.index
+3015118203.index
+2000649257.index
+3247206563.index
+2822759956.index
+3108363466.index
+1570131657.index
+4273433702.index
+473755506.index
+861229811.index
+35750986.index
+32634983.index
+3287078126.index
+4154281906.index
+2570132741.index
+1997732390.index
+2183128580.index

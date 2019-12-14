@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:pt="http://xmlns.jcp.org/jsf/passthrough">
+<h:head>
+	<title>Kalkulator kredytowy</title>
+</h:head>
+<h:body>
+ <p:panel id="kalkulator" header="Kalkulator kredytowy" toggleable="true"  toggleSpeed="500" closeSpeed="500" widgetVar="panel" style="margin-bottom:20px">
+	
+   
+ 
+	<h:form id="bla">
+  		KWOTA : <p:inputText value="#{calcKredBB.kwota}" />
+		<br />
+  		LATA : <p:inputText value="#{calcKredBB.lata}" />
+		<br />
+		 
+		OPROCENTOWANIE : <p:selectOneMenu value="#{calcKredBB.oprocentowanie}" style="width:125px">
+		
+		<f:selectItems value="#{opOptions.opValues}"/>
+   		</p:selectOneMenu>   
+		<br />
+		
+		<h:messages id="msg" />
+
+			<p:button value="Oblicz" action="#{calcKredBB.calc()}" update="msg"
+				icon="ui-icon-calculator" />
+			<br />
+		<p:commandLink value="Informacje" action="#{calcKredBB.info()}" />
+	</h:form>
+	
+    </p:panel>
+
+</h:body>
+</html>

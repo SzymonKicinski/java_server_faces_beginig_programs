@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+
+<ui:composition template="/templates/page-template.xhtml">
+
+	<ui:define name="pageContent">
+
+		<h:messages id="msg" />
+
+		<h:form id="bla">
+  		KWOTA : <h:inputText value="#{CalcKredBB.kwota}" />
+		<br />
+  		LATA : <h:inputText value="#{CalcKredBB.lata}" />
+		<br />
+		
+		OPROCENTOWANIE : <h:selectOneMenu value="#{CalcKredBB.oprocentowanie}" >
+		<f:selectItem itemValue = "1" itemLabel = "1%" /> 
+   		<f:selectItem itemValue = "2" itemLabel = "2%" /> 
+   		<f:selectItem itemValue = "3" itemLabel = "3%" /> 
+   		<f:selectItem itemValue = "4" itemLabel = "4%" /> 
+   		<f:selectItem itemValue = "5" itemLabel = "5%" /> 
+		</h:selectOneMenu>   
+		<br />
+		
+		<h:messages id="msg" />
+
+		<h:commandButton value="OBLICZ" action="#{CalcKredBB.calc()}" update="msg"/>
+		<br />
+		<h:commandLink value="Informacje" action="#{CalcKredBB.info()}" />
+	</h:form>
+	</ui:define>
+
+
+</ui:composition>
+</html>

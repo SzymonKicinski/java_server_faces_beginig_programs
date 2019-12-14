@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kb-project>
+ <depends-on-projects/>
+ <used-by-projects/>
+ <paths>
+  <path value="/jsf_02_old_factory/WebContent/WEB-INF/faces-config.xml">
+   <libraries>
+    <library class="faces-config">
+     <id class="model-object"
+      path="FileSystems/WEB-INF/faces-config.xml" project="jsf_02_old_factory"/>
+    </library>
+   </libraries>
+  </path>
+ </paths>
+ <validation>
+  <el>
+   <linked-el length="30" name="%0" offset="538" path="%1"/>
+   <linked-el length="14" name="%0" offset="710" path="%2"/>
+   <linked-el length="24" name="%0" offset="774" path="%2"/>
+   <linked-el length="27" name="%0" offset="577" path="%1"/>
+   <linked-el length="14" name="%0" offset="609" path="%2"/>
+   <linked-el length="19" name="%0" offset="881" path="%2"/>
+   <linked-el length="39" name="%3" offset="598" path="%4"/>
+   <linked-el length="30" name="%5" offset="538" path="%1"/>
+   <linked-el length="14" name="%5" offset="710" path="%2"/>
+   <linked-el length="24" name="%5" offset="774" path="%2"/>
+   <linked-el length="27" name="%5" offset="577" path="%1"/>
+   <linked-el length="14" name="%5" offset="609" path="%2"/>
+   <linked-el length="19" name="%5" offset="881" path="%2"/>
+  </el>
+ </validation>
+ <aliases>
+  <alias path="/jsf_02_old_factory/src/com/jsfcourse/calc/CalcBB.java" value="%0"/>
+  <alias path="/jsf_02_old_factory/WebContent/showresult.xhtml" value="%1"/>
+  <alias path="resource" value="%3"/>
+  <alias
+   path="/jsf_02_old_factory/WebContent/templates/main-template.xhtml" value="%4"/>
+  <alias path="/jsf_02_old_factory/WebContent/index.xhtml" value="%2"/>
+  <alias path="calcBB" value="%5"/>
+ </aliases>
+ <includes/>
+ <uris>
+  <uri value="http://java.sun.com/jsf/core">
+   <prefix>f</prefix>
+  </uri>
+  <uri value="http://java.sun.com/jsf/html">
+   <prefix>h</prefix>
+  </uri>
+ </uris>
+</kb-project>

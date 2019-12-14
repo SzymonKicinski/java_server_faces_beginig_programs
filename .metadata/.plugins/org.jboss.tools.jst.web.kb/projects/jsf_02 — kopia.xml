@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kb-project>
+ <depends-on-projects/>
+ <used-by-projects/>
+ <paths>
+  <path value="/jsf_02 — kopia/WebContent/WEB-INF/faces-config.xml">
+   <libraries>
+    <library class="faces-config">
+     <id class="model-object"
+      path="FileSystems/WEB-INF/faces-config.xml" project="jsf_02 — kopia"/>
+    </library>
+   </libraries>
+  </path>
+ </paths>
+ <validation>
+  <el>
+   <linked-el length="14" name="%0" offset="609" path="%1"/>
+   <linked-el length="39" name="%2" offset="599" path="%3"/>
+   <linked-el length="30" name="%4" offset="538" path="%5"/>
+   <linked-el length="14" name="%4" offset="710" path="%1"/>
+   <linked-el length="24" name="%4" offset="774" path="%1"/>
+   <linked-el length="27" name="%4" offset="577" path="%5"/>
+   <linked-el length="14" name="%4" offset="609" path="%1"/>
+   <linked-el length="19" name="%4" offset="881" path="%1"/>
+   <linked-el length="30" name="%6" offset="538" path="%5"/>
+   <linked-el length="27" name="%6" offset="577" path="%5"/>
+   <linked-el length="14" name="%7" offset="710" path="%1"/>
+  </el>
+ </validation>
+ <aliases>
+  <alias path="calcBB.x" value="%0"/>
+  <alias path="/jsf_02 — kopia/WebContent/index.xhtml" value="%1"/>
+  <alias path="resource" value="%2"/>
+  <alias path="/jsf_02 — kopia/WebContent/templates/main-template.xhtml" value="%3"/>
+  <alias path="/jsf_02 — kopia/WebContent/showresult.xhtml" value="%5"/>
+  <alias path="calcBB" value="%4"/>
+  <alias path="calcBB.result" value="%6"/>
+  <alias path="calcBB.y" value="%7"/>
+ </aliases>
+ <includes/>
+ <uris>
+  <uri value="http://java.sun.com/jsf/core">
+   <prefix>f</prefix>
+  </uri>
+  <uri value="http://java.sun.com/jsf/html">
+   <prefix>h</prefix>
+  </uri>
+ </uris>
+</kb-project>
